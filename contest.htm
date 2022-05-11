@@ -20,24 +20,9 @@
     <link rel="stylesheet" href="assets/css/owl.css">
   </head>
 
-  <body>
+  <body oncontextmenu="return false">
 
     <!-- ***** Preloader Start ***** -->
-    <style>
-      button {
-        background-color: #008b8b;
-        color: white;
-        padding: 14px 20px;
-        margin: 8px 0;
-        border: none;
-        cursor: pointer;
-        width: 100%;
-      }
-
-      button:hover {
-        opacity: 0.8;
-      }
-    </style>
     <div id="preloader">
         <div class="jumper">
             <div></div>
@@ -88,13 +73,42 @@
           <div class="col-md-12">
             <h1>OVCT Programming Contests</h1>
             <p><a href="https://ovct.netlify.app/">Home</a> / <span>Contests</span></p>
-            <button onclick="window.location.href='https://forms.gle/UoeFXnzZ6xy5M5zm7'">Sign Up Form</button>
           </div>
         </div>
       </div>
     </div>
     <!-- Heading Ends Here -->
+    <p id="demo"></p>
+    <h4 id="demo1"></p>
+    <h4 id="demo2"></p>
+    <script>
+	    var text = "Novice";
+      var text2 = "Intermediate";
+    </script>
+    <script>
+      var d = new Date();
+      var setdate = new Date("2022-06-4, 13:30:00"); //do one number more than current day number (yyyy-mm-dd)
+      var day = (d.getDate()).toString();
+      var month = (d.getMonth()+1).toString();
+      var year = (d.getFullYear()).toString();
 
+      var hours = (d.getHours()).toString();
+      var minutes = (d.getMinutes()).toString();
+      var seconds = (d.getSeconds()).toString();
+      var curtime = hours + ":" + minutes + ":" + seconds;
+      var curdate = new Date(year + "-" + month + "-" + day + ", " + curtime);
+
+
+      if (curdate > setdate) {
+        //alert(setdate);
+        //alert(curdate);
+        var result = text.link("https://www.hackerrank.com/oak-valley-computing-tournament-bronze");
+        var result2 = text2.link("https://www.hackerrank.com/oak-valley-computing-tournament-intermediate");
+        document.getElementById("demo1").innerHTML = result;
+        document.getElementById("demo2").innerHTML = result2;
+        
+      }
+    </script>
 
 
 
