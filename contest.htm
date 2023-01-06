@@ -99,16 +99,15 @@
       var curtime = hours + ":" + minutes + ":" + seconds;
       var curdate = new Date(year + "-" + month + "-" + day + ", " + curtime);
 
-
+      var mylabel = text3.link("https://ovct.netlify.app/contest.htm");
+      var result = text.link("https://www.hackerrank.com/oak-valley-computing-tournament-novice");
+      var result2 = text2.link("https://www.hackerrank.com/oak-valley-computing-tournament-intermediate");
+      document.getElementById("label1").innerHTML = label1;
+      document.getElementById("demo1").innerHTML = result;
+      document.getElementById("demo2").innerHTML = result2;
       if (curdate > setdate) {
         //alert(setdate);
         //alert(curdate);
-	var mylabel = text3.link("https://ovct.netlify.app/contest.htm");
-        var result = text.link("https://www.hackerrank.com/oak-valley-computing-tournament-novice");
-        var result2 = text2.link("https://www.hackerrank.com/oak-valley-computing-tournament-intermediate");
-	document.getElementById("label1").innerHTML = label1;
-        document.getElementById("demo1").innerHTML = result;
-        document.getElementById("demo2").innerHTML = result2;
         
       }
     </script>
